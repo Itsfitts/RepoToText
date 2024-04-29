@@ -137,8 +137,8 @@ def scrape():
 
     return jsonify({"response": file_content})
 
-if __name__ == "__main__": # -- UNCOMMENT TO RUN WITH DOCKER
-    app.run(host='0.0.0.0')
+# if __name__ == "__main__": # -- UNCOMMENT TO RUN WITH DOCKER
+#    app.run(host='0.0.0.0')
 
-# if __name__ == "__main__": -- UNCOMMENT TO RUN LOCALLY WITHOUT DOCKER
-#     app.run(port=5000)
+if __name__ == "__main__": -- UNCOMMENT TO RUN LOCALLY WITHOUT DOCKER
+     app.run(port=5000)
